@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100">
+    <header>
+    <h1 class="text-5xl text-center mt-6 mb-10">Let's get Some 
+     <span class="font-semibold text-violet-600">Money</span>!!</h1>
+    </header>
+    <main class="container mx-auto">
+        <section class="mb-10">
+            <div class="cards grid grid-cols-3 gap-4  ">
+                <div class="card bg-green-300 p-10 rounded-xl">
+                    <p class="text-4xl">Deoposite</p>
+                    <p  class="text-4xl">$<span id="de-update">25</span></p>
+                </div>
+                <div class="card bg-green-300 p-10  rounded-xl">
+                    <p class="text-4xl">Withdraw</p>
+                    <p class="text-4xl">$<span id="wi-update">16</p>
+                </div>
+                <div class="card bg-green-300 p-10 rounded-xl">
+                    <p class="text-4xl">balance</p>
+                    <p class="text-4xl">$<span id="bal-update">100</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="grid grid-cols-2 gap-4 ">
+            <div class="bg-purple-400 p-10">
+                <p class="text-4xl text-center mb-3">Please Deposite</p>
+                <input id="de-am" class="w-8/12 p-2 mb-2 border-2" type="number" placeholder="Enter depoamount" ><br>
+                <button id="bnt-de" type="submit" class=" bg-blue-400 p-4 px-8 rounded-xl font-semibold ">Deposite</button>
+            </div>
+            <div class="bg-orange-400 p-10">
+                 <p class="text-4xl text-center mb-3">Please Withdraw</p>
+                 <input id="wi-am" class="w-8/12 p-2 mb-2 border-2" type="number" placeholder="Enter depoamount"><br>
+                 <button id="btn-wi" type="submit" class=" bg-blue-400 p-4 px-8 rounded-xl font-semibold ">Wirhdraw</button>
+            </div>
+        </section>
+        
+        <div class="text-center">
+            <button id="btn-log" class="text-4xl border-2 bg-amber-300 mt-12 p-2 font-semibold rounded-xl ">Logout</button>
+        </div>
+         
+    </main>
+    
+    <script src="js/common.js"></script>
+    <script src="js/depo.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="js/logout.js"></script>
+    
+</body>
+</html>
